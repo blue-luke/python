@@ -1,4 +1,4 @@
-from app import *
+from plane import *
 
 def test_land_plane():
   plane = Plane()

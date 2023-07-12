@@ -1,7 +1,3 @@
-# landings = 0
-
-take_offs = 0
-
 class Plane():
   def __init__(self, landings = 0, take_offs = 0):
     self.landings = landings
