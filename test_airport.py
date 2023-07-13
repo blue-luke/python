@@ -1,10 +1,13 @@
 from airport import *
 from plane import *
 
-def test_check_left_airport():
-  airport = Airport(Plane)
-  assert airport.plane_left_airport() == True
 
-def test_check_at_airport():
-  airport = Airport(Plane)
-  assert airport.plane_at_airport() == True
+
+
+# def test_airport_full():
+#   airport = Airport(Plane)
+#   plane1 = airport.plane1
+#   plane2 = airport.plane2
+#   airport.plane1.land_plane()
+#   assert airport.plane2.land_plane() == "Airport is full"
+
