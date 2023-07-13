@@ -14,7 +14,4 @@ class Airport(Plane):
     else:
       self.landed_planes += 1
       return plane.land()
-        
 
-  def plane1(self):
-    return self.plane1

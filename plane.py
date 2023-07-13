@@ -1,26 +1,23 @@
 class Plane():
-  def __init__(self, landings = 0, take_offs = 0):
-    self.landings = landings
-    self.take_offs = take_offs
+  def __init__(self, is_landed = True):
+    self.is_landed = is_landed
 
   def land(self):
-    if self.landings <1:
-      self.landings = 1
-      self.take_offs = 0
+    if not self.is_landed:
+      self.is_landed = True
       return "Plane has landed"
     else:
       return "Error: plane has already landed"
 
   def take_off(self):
-      if self.take_offs <1:
-        self.take_offs = 1
-        self.landings = 0
+      if self.is_landed:
+        self.is_landed = False
         return "Plane has taken off"
       else:
         return "Error: plane has already taken off"
 
-  def flying(self):
-    return self.take_offs == 1
+  def airborne(self):
+    return not self.is_landed
 
-  def landed(self):
-    return self.landings == 1
+  def parked(self):
+    return self.is_landed
