@@ -8,13 +8,13 @@ class Airport(Plane):
     self.capacity = 1
     self.landed_planes = 0
 
+  def land(self, plane):
+    if self.landed_planes == self.capacity:
+      return "Airport is full"
+    else:
+      self.landed_planes += 1
+      return plane.land()
+        
+
   def plane1(self):
     return self.plane1
-
-  # def plane_left_airport(self):
-  #   if self.plane.take_off_plane() == "Plane has taken off":
-  #     return True
-    
-  # def plane_at_airport(self, plane):
-  #   if self.plane.land_plane() == "Plane has landed":
-  #     return True 
