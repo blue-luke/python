@@ -2,6 +2,26 @@
 
 I am initialising the airport with planes that stay attached to the airport
 
+# Description
+
+Airport challenge in python
+
+I use pytest, a /src file and tests in /
+
+Test files must start with test_ and test functions must start with test_
+
+You can TDD your way to an app
+
+Planes can land and take off
+
+You can't land twice in succession
+
+You can land a plane via an airport
+
+Airports have capacity
+
+I was in the process of defining a full airport and not letting additional planes land. This conflicts with the notion of capacity, as I had initialised an airport with 'capacity' number of ladnded plane, so I couldn't create the surplus plane that the test would need
+
 # python Airport Challenge: 
 
 We have a request from a client to write the software to control the flow of planes at an airport. The planes can land and take off provided that the weather is sunny. Occasionally it may be stormy, in which case no planes can land or take off. Here are the user stories that we worked out in collaboration with the client:
