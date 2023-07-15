@@ -11,8 +11,10 @@ You can currently call result() before play_hand() has been called for each play
 
 
 
-Another option would be:
+Another option would be to have a dictionary of whether the hand beats the other hands. Eg, rock[scissors] == True
 
-rock_beats = { scissors: True, paper: False}
+rock = { scissors: True, paper: False }
+paper = { rock: True, scissors: False }
+scissors = { paper: True, rock: False }
 
 This would be scaleable to more than 3 hands. You could initialise the game with the number of hands and an explanation of what beats what. However, you would need a completeness/consistency checker to make sure that that information was correct. I suspect this is a complex algorithm (to scale to arbitrary values of n), which is beyond the scope of this exercise
