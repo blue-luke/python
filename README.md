@@ -6,7 +6,7 @@ I am initialising the airport with planes that stay attached to the airport
 
 Airport challenge in python
 
-I use pytest, a /src file and tests in /
+I use pytest, with tests and source files in /
 
 Test files must start with test_ and test functions must start with test_
 
